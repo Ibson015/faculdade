@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Plataforma da ONG — projetos, voluntariado, doações e transparência." />
+  <meta name="keywords" content="ONG, voluntariado, projetos sociais, doações, transparência" />
+  <title>Plataforma ONG — Início</title>
+
+  <meta property="og:title" content="Plataforma ONG — Início" />
+  <meta property="og:description" content="Conheça projetos, participe como voluntário e apoie nossa causa." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para conteúdo</a>
+  <header role="banner">
+    <div class="container nav" aria-label="Cabeçalho">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">ONG</div>
+        <div>
+          <div style="font-weight:700">ONG Exemplo</div>
+          <div style="font-size:.85rem;color:rgba(255,255,255,0.9)">Missão: transformar comunidades</div>
+        </div>
+      </div>
+
+      <nav role="navigation" aria-label="Navegação principal">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">☰ Menu</button>
+        <div id="mobile-menu" class="menu-panel">
+          <ul>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#voluntariado">Voluntarie-se</a></li>
+            <li><a href="#doar">Doar</a></li>
+            <li><a href="#transparencia">Transparência</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container hero" role="region" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div>
+          <h1 id="hero-title">Conectando pessoas, transformando realidades</h1>
+          <p class="muted">Descubra projetos, participe como voluntário e apoie nossas campanhas de forma segura e transparente.</p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn-ghost" href="#doar">Doar agora</a>
+          </div>
+
+          <section class="card" style="margin-top:1rem;" aria-labelledby="impactos">
+            <h3 id="impactos" style="margin:.1rem 0">Números recentes</h3>
+            <p class="meta">Mais de <strong>2.400</strong> beneficiados nos últimos 12 meses • <strong>120</strong> voluntários ativos</p>
+            <div style="margin-top:.6rem">
+              <div class="uppercase" style="font-size:.8rem">Campanha: Reforma do Centro Comunitário</div>
+              <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72" aria-label="Progresso da meta de arrecadação">
+                <i style="width:72%"></i>
+              </div>
+              <div class="muted" style="font-size:.85rem;margin-top:.3rem">R$ 72.000 arrecadados de R$ 100.000</div>
+            </div>
+          </section>
+        </div>
+
+        <aside class="card" aria-labelledby="quick-actions">
+          <h3 id="quick-actions">Ações rápidas</h3>
+          <p class="muted">Apoie com doação única ou assine uma contribuição mensal.</p>
+          <a href="#doar" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.6rem">Doar</a>
+
+          <hr style="margin:1rem 0;border:none;border-top:1px solid #eef6f5">
+
+          <h4 style="margin:.2rem 0">Procurando voluntariado?</h4>
+          <p class="muted">Confira oportunidades mais próximas do seu perfil.</p>
+          <a href="#voluntariado" class="btn" style="width:100%;border:1px solid #eef6f5;margin-top:.4rem">Ver vagas</a>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+
+    <!-- Projetos -->
+    <section id="projetos" aria-labelledby="projetos-title">
+      <h2 id="projetos-title">Projetos</h2>
+      <p class="muted">Conheça nossos projetos, impactos e como você pode ajudar.</p>
+
+      <div class="projects" aria-live="polite">
+        <!-- Project item (repeatable) -->
+        <article class="card project-item" role="article" aria-labelledby="p1">
+          <img src="https://via.placeholder.com/800x400" alt="Oficina de alfabetização" loading="lazy" width="800" height="400">
+          <h3 id="p1">Oficinas de Alfabetização</h3>
+          <p class="meta">Categoria: Educação • Duração: 12 meses</p>
+          <p class="muted">Programa que oferece alfabetização para jovens e adultos, com metodologia participativa e materiais didáticos.</p>
+          <div style="margin-top:.6rem;display:flex;gap:.5rem;flex-wrap:wrap">
+            <a class="btn" href="#">Saiba mais</a>
+            <a class="btn" href="#voluntariado">Quero ser voluntário</a>
+          </div>
+        </article>
+
+        <article class="card project-item" role="article" aria-labelledby="p2">
+          <img src="https://via.placeholder.com/800x400" alt="Apoio alimentar" loading="lazy" width="800" height="400">
+          <h3 id="p2">Apoio Alimentar</h3>
+          <p class="meta">Categoria: Segurança alimentar • Duração: Contínuo</p>
+          <p class="muted">Distribuição de cestas básicas e cursos de aproveitamento integral dos alimentos para famílias em vulnerabilidade.</p>
+          <div style="margin-top:.6rem;display:flex;gap:.5rem;flex-wrap:wrap">
+            <a class="btn" href="#">Saiba mais</a>
+            <a class="btn" href="#doar">Apoiar</a>
+          </div>
+        </article>
+
+        <article class="card project-item" role="article" aria-labelledby="p3">
+          <img src="https://via.placeholder.com/800x400" alt="Oficina de geração de renda" loading="lazy" width="800" height="400">
+          <h3 id="p3">Geração de Renda</h3>
+          <p class="meta">Categoria: Emprego & Renda • Duração: 6 meses</p>
+          <p class="muted">Cursos de capacitação técnica, mentoria e apoio ao empreendedorismo local.</p>
+          <div style="margin-top:.6rem;display:flex;gap:.5rem;flex-wrap:wrap">
+            <a class="btn" href="#">Saiba mais</a>
+            <a class="btn" href="#voluntariado">Participar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Voluntariado -->
+    <section id="voluntariado" aria-labelledby="vol-title">
+      <h2 id="vol-title">Voluntariado</h2>
+      <p class="muted">Encontre oportunidades e candidate-se de forma simples.</p>
+
+      <div class="card">
+        <h3>Vagas abertas</h3>
+        <ul style="padding-left:1rem;margin:0">
+          <li class="opportunity">
+            <div style="width:56px;height:56px;border-radius:8px;background:#f1f7f6;flex-shrink:0;display:flex;align-items:center;justify-content:center">📚</div>
+            <div class="info">
+              <strong>Monitor de alfabetização</strong>
+              <div class="meta">Local: Centro • 8h/semana</div>
+              <p class="muted">Apoio às oficinas, acompanhamento de participantes e preparo de materiais.</p>
+              <a class="btn" href="#" style="margin-top:.4rem">Candidatar-se</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:1rem">
+        <h3>Área do Voluntário</h3>
+        <p class="muted">Acompanhe suas participações, baixe certificados e atualize seu perfil.</p>
+        <a class="bt

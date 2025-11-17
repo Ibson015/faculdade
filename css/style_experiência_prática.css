@@ -1,0 +1,92 @@
+/* ======================
+   RESET E BASE GLOBAL
+====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    color: #333;
+    padding: 20px;
+}
+
+/* ======================
+   MENU SPA
+====================== */
+nav {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0077cc;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #005299;
+}
+
+/* ======================
+   PÁGINAS
+====================== */
+.page {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    animation: fadeIn 0.3s ease;
+}
+
+/* fade da página */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ======================
+   BOTÕES
+====================== */
+button {
+    margin-top: 20px;
+    padding: 10px 16px;
+    background: #0077cc;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+
+#loader {
+    backdrop-filter: blur(3px);
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 20px;
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+}

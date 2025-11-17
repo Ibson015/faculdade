@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plataforma ONG</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    nav { background: #0a4d68; color: #fff; padding: 1rem; display: flex; gap: 1rem; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    section { padding: 2rem; }
+    .hidden { display: none; }
+    .btn { padding: .7rem 1rem; background: #0a4d68; color: #fff; border: none; cursor: pointer; }
+    .btn:hover { background: #096086; }
+    input, textarea { width: 100%; padding: .7rem; margin-top: .5rem; margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" onclick="navigate('home')">Início</a>
+    <a href="#" onclick="navigate('projetos')">Projetos</a>
+    <a href="#" onclick="navigate('voluntariado')">Voluntariado</a>
+    <a href="#" onclick="navigate('doacoes')">Doações</a>
+    <a href="#" onclick="navigate('transparencia')">Transparência</a>
+  </nav>
+
+  <section id="home">
+    <h1>Bem-vindo à Plataforma da ONG</h1>
+    <p>Missão, visão, valores e impacto social.</p>
+  </section>
+
+  <section id="projetos" class="hidden">
+    <h1>Projetos</h1>
+    <p>Lista de projetos sociais da organização.</p>
+  </section>
+
+  <section id="voluntariado" class="hidden">
+    <h1>Voluntariado</h1>
+    <form>
+      <label>Nome</label>
+      <input type="text" placeholder="Seu nome" />
+
+      <label>E-mail</label>
+      <input type="email" placeholder="Seu e-mail" />
+
+      <label>Motivação</label>
+      <textarea placeholder="Por que deseja ser voluntário?"></textarea>
+
+      <button class="btn" type="button">Enviar inscrição</button>
+    </form>
+  </section>
+
+  <section id="doacoes" class="hidden">
+    <h1>Doações</h1>
+    <form>
+      <label>Valor da doação (R$)</label>
+      <input type="number" placeholder="100" />
+
+      <label>Nome</label>
+      <input type="text" placeholder="Seu nome" />
+
+      <button class="btn" type="button">Doar agora</button>
+    </form>
+  </section>
+
+  <section id="transparencia" class="hidden">
+    <h1>Transparência</h1>
+    <p>Relatórios e documentos públicos.</p>
+  </section>
+
+  <script>
+    function navigate(page) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(page).classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
+

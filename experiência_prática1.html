@@ -12,10 +12,11 @@
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="style.css">
-  
 </head>
+
 <body>
   <a class="skip-link" href="#main">Pular para conteúdo</a>
+
   <header role="banner">
     <div class="container nav" aria-label="Cabeçalho">
       <div class="brand">
@@ -32,6 +33,7 @@
           <ul>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#voluntariado">Voluntarie-se</a></li>
+            <li><a href="#cadastro">Cadastro</a></li>
             <li><a href="#doar">Doar</a></li>
             <li><a href="#transparencia">Transparência</a></li>
             <li><a href="#blog">Blog</a></li>
@@ -88,12 +90,12 @@
       <p class="muted">Conheça nossos projetos, impactos e como você pode ajudar.</p>
 
       <div class="projects" aria-live="polite">
-        <!-- Project item (repeatable) -->
+
         <article class="card project-item" role="article" aria-labelledby="p1">
-          <img src="https://via.placeholder.com/800x400" alt="Oficina de alfabetização" loading="lazy" width="800" height="400">
+          <img src="https://via.placeholder.com/800x400" alt="Oficina de alfabetização" loading="lazy">
           <h3 id="p1">Oficinas de Alfabetização</h3>
           <p class="meta">Categoria: Educação • Duração: 12 meses</p>
-          <p class="muted">Programa que oferece alfabetização para jovens e adultos, com metodologia participativa e materiais didáticos.</p>
+          <p class="muted">Programa que oferece alfabetização para jovens e adultos.</p>
           <div style="margin-top:.6rem;display:flex;gap:.5rem;flex-wrap:wrap">
             <a class="btn" href="#">Saiba mais</a>
             <a class="btn" href="#voluntariado">Quero ser voluntário</a>
@@ -101,10 +103,10 @@
         </article>
 
         <article class="card project-item" role="article" aria-labelledby="p2">
-          <img src="https://via.placeholder.com/800x400" alt="Apoio alimentar" loading="lazy" width="800" height="400">
+          <img src="https://via.placeholder.com/800x400" alt="Apoio alimentar" loading="lazy">
           <h3 id="p2">Apoio Alimentar</h3>
           <p class="meta">Categoria: Segurança alimentar • Duração: Contínuo</p>
-          <p class="muted">Distribuição de cestas básicas e cursos de aproveitamento integral dos alimentos para famílias em vulnerabilidade.</p>
+          <p class="muted">Distribuição de cestas básicas e apoio a famílias vulneráveis.</p>
           <div style="margin-top:.6rem;display:flex;gap:.5rem;flex-wrap:wrap">
             <a class="btn" href="#">Saiba mais</a>
             <a class="btn" href="#doar">Apoiar</a>
@@ -112,20 +114,21 @@
         </article>
 
         <article class="card project-item" role="article" aria-labelledby="p3">
-          <img src="https://via.placeholder.com/800x400" alt="Oficina de geração de renda" loading="lazy" width="800" height="400">
+          <img src="https://via.placeholder.com/800x400" alt="Oficina de geração de renda" loading="lazy">
           <h3 id="p3">Geração de Renda</h3>
           <p class="meta">Categoria: Emprego & Renda • Duração: 6 meses</p>
-          <p class="muted">Cursos de capacitação técnica, mentoria e apoio ao empreendedorismo local.</p>
+          <p class="muted">Cursos de capacitação técnica e empreendedorismo.</p>
           <div style="margin-top:.6rem;display:flex;gap:.5rem;flex-wrap:wrap">
             <a class="btn" href="#">Saiba mais</a>
             <a class="btn" href="#voluntariado">Participar</a>
           </div>
         </article>
+
       </div>
     </section>
 
     <!-- Voluntariado -->
-    <section id="voluntariado" aria-labelledby="vol-title">
+    <section id="voluntariado" aria-labelledby="vol-title" style="margin-top:3rem">
       <h2 id="vol-title">Voluntariado</h2>
       <p class="muted">Encontre oportunidades e candidate-se de forma simples.</p>
 
@@ -137,14 +140,93 @@
             <div class="info">
               <strong>Monitor de alfabetização</strong>
               <div class="meta">Local: Centro • 8h/semana</div>
-              <p class="muted">Apoio às oficinas, acompanhamento de participantes e preparo de materiais.</p>
-              <a class="btn" href="#" style="margin-top:.4rem">Candidatar-se</a>
+              <p class="muted">Apoio às oficinas e acompanhamento de participantes.</p>
+              <a class="btn" href="#">Candidatar-se</a>
             </div>
           </li>
         </ul>
       </div>
+    </section>
 
-      <div class="card" style="margin-top:1rem">
-        <h3>Área do Voluntário</h3>
-        <p class="muted">Acompanhe suas participações, baixe certificados e atualize seu perfil.</p>
-        <a class="bt
+    <!-- Cadastro -->
+    <section id="cadastro" style="margin-top:3rem">
+      <h2>Cadastro</h2>
+      <p class="muted">Preencha seus dados para fazer parte da ONG.</p>
+
+      <div class="card" style="padding:20px;">
+
+        <form>
+
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" required minlength="3">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required>
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" required maxlength="14">
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" required maxlength="15">
+
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" id="nascimento" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Endereço</legend>
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" required>
+
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" required maxlength="9">
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" required>
+
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" required maxlength="2">
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary">Enviar Cadastro</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="margin-top:3rem;padding:2rem 0;text-align:center;color:#666">
+    © 2025 ONG Exemplo — Todos os direitos reservados
+  </footer>
+
+  <!-- MÁSCARAS -->
+  <script>
+    document.getElementById("cpf").addEventListener("input", function (e) {
+        let v = e.target.value.replace(/\D/g, "");
+        v = v.replace(/(\d{3})(\d)/, "$1.$2");
+        v = v.replace(/(\d{3})(\d)/, "$1.$2");
+        v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+        e.target.value = v;
+    });
+
+    document.getElementById("telefone").addEventListener("input", function (e) {
+        let v = e.target.value.replace(/\D/g, "");
+        v = v.replace(/^(\d{2})(\d)/g, "($1) $2");
+        v = v.replace(/(\d{5})(\d)/, "$1-$2");
+        e.target.value = v;
+    });
+
+    document.getElementById("cep").addEventListener("input", function (e) {
+        let v = e.target.value.replace(/\D/g, "");
+        v = v.replace(/(\d{5})(\d)/, "$1-$2");
+        e.target.value = v;
+    });
+  </script>
+
+</body>
+</html>
